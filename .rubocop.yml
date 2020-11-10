@@ -1,0 +1,12 @@
+AllCops:
+  Exclude:
+    - 'bin/*'
+    - 'Gemfile'
+    - 'config/**/*'
+  NewCops: enable
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
