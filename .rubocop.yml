@@ -3,6 +3,7 @@ AllCops:
     - 'bin/*'
     - 'Gemfile'
     - 'config/**/*'
+    - 'db/**/*'
   NewCops: enable
 
 Style/Documentation:
@@ -10,3 +11,6 @@ Style/Documentation:
 
 Style/FrozenStringLiteralComment:
   Enabled: false
+
+Metrics/BlockLength:
+  ExcludedMethods: ['describe', 'context']

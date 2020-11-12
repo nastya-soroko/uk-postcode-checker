@@ -1,5 +1,5 @@
 <%= form_with(url: "/postcodes/check", method: "post") do %>
   <%= label_tag(:postcode, "Postcode: ") %>
-  <%= text_field_tag(:postcode) %>
+  <%= text_field_tag(:postcode, nil, required: true, pattern: ::PostcodeChecker::POSTCODE_REGEX.source, title: "Invalid postcode format") %>
   <%= submit_tag("Check") %>
 <% end %>
